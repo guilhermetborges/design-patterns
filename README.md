@@ -47,7 +47,7 @@ Cada pasta segue o formato:
 
 Clone o repositório:
 bash
-git clone https://github.com/seuusuario/padroes-projeto-python.git
+git clone https://github.com/guilhermetborges/padroes-projeto-python.git
 cd padroes-projeto-python
 
 python exemplo.py
