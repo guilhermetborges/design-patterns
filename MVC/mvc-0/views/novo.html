@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block head %}
+    <title>Novo Produto</title>
+{% end %}
+{% block body %}
+    <h1>Novo Produto</h1>
+    <form action="/produto/novo" method="POST">
+        <div class="mb-3">
+            <label for="nome" class="form-label">nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="informe o produto" required autofocus>
+        </div>
+        <div class="mb-3">
+            <label for="preco" class="form-label">preco</label>
+            <input type="text" class="form-control" id="preco" name="preco" placeholder="informe o preco" required>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Salvar</button>
+            <a class="btn btn-secondary" href="/">Cancelar</a>
+        </div>
+    </form>
+{% end %}

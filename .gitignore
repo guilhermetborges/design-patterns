@@ -1,3 +1,7 @@
 *patterns/
 patterns/
 *patterns
+
+.venv/
+*.venv/
+*.venv/

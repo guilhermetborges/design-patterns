@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block head %}
+    <title>Listagem</title>
+{% end %}
+{% block body %}
+    <h1>Produtos</h1>
+    {% if produtos %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Preco</th>
+                    <th>Status</th>
+                    <th>Acao</th>
+                    <th>Deletar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for produto in produtos %}
+                    <tr>
+                        <td>{{ produto["id"] }}</td>
+                        <td>{{ produto["nome"] }}</td>
+                        <td>{{ produto["preco"] }}</td>
+                        {% if produto["status"] == 1 %}
+                            <td>Ativo</td>
+                            <td><a class="btn btn-warning" href="/produto/atualizar/{{ produto['id'] }}/status/0">Desativar</a></td>
+                        {% else %}
+                            <td>Inativo</td>
+                            <td><a class="btn btn-success" href="/produto/atualizar/{{ produto['id'] }}/status/1">Ativar</a></td>
+                        {% end %}
+                        <td><a class="btn btn-danger" href="/delete/{{ produto['id'] }}">Deletar</a></td>
+                    </tr>
+                {% end %}
+            </tbody>
+        </table>
+    {% else %}
+        <h3>Nao ha produtos cadastrados</h3>
+    {% end %}
+    <div class="mt-3">
+        <a class="btn btn-success" href="/produto/novo">Cadastrar produto</a>
+    </div>
+{% end %}
