@@ -1,4 +1,4 @@
-# 🏗️ Padrões de Projeto em Python 
+#  Padrões de Projeto em Python 
 
 Este repositório é um **guia prático** e um **portfólio** de implementação de **padrões de projeto** em Python.  
 Cada pasta contém um padrão específico, com exemplos práticos e um arquivo `.md` explicando a teoria e o código.
@@ -7,7 +7,7 @@ O objetivo é consolidar o estudo dos padrões de projeto e servir como referên
 
 ---
 
-## 📂 Estrutura do Repositório
+##  Estrutura do Repositório
 
 Cada pasta segue o formato:
 
@@ -19,7 +19,7 @@ Cada pasta segue o formato:
 
 ---
 
-## 📜 Lista de Padrões de Projeto Implementados
+##  Lista de Padrões de Projeto Implementados
 
 1. **Singleton** – Garantir que apenas uma instância de uma classe exista.
 2.  
@@ -43,7 +43,7 @@ Cada pasta segue o formato:
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 Clone o repositório:
 bash
@@ -52,6 +52,6 @@ cd padroes-projeto-python
 
 python exemplo.py
 
-📢 Conecte-se Comigo
-Se gostou ,  me envie uma solicitação no [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue)](https://www.linkedin.com/in/guilherme-gtb/)
- para acompanhar novos projetos e estudos! 🚀
+Conecte-se 
+  me envie uma solicitação no [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue)](https://www.linkedin.com/in/guilherme-gtb/)
+ para acompanhar novos projetos e estudos! 
